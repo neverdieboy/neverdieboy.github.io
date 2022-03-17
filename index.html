@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+            window.location.hash = hash;
+        });
+        } 
+    });
+    });
+</script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/DotaLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#test">TEST</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#tournaments">TOURNAMENTS</a></li>
+                    <li><a href="#feedback">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>DEFENCE OF THE ANCIENT</h1>
+            <a href="https://store.steampowered.com/app/570/Dota_2/" class="hero-btn">Zostan czescia wspanialej spolecznosci DOTA</a>
+        </div>
+
+    </section>
+    
+    <!---test-->
+    <section class="test" id = "test">
+        <div class = "testText">
+            <h1>Zdaj test ze swojej wiedzy</h1>
+            <p>Krotki test sprawdzajacy Twoja wiedze w dota2</p>
+        </div>
+        <div class="score">
+            <h1 id="right-answers">Wlasciwe odpowiedzi: 0/3 </h1>
+        </div>
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question" class="que">a</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+        </div>
+       
+        
+        <script src="scriptTest.js"></script>
+    </section>
+
+    <!--About-->
+    <section class = "about" id="about">
+        <div class = "aboutHeader">
+            <h1>Troche o Dota!</h1>
+        </div>
+
+        <div class = "row">
+            <div class = "about-col">
+                <h3>Opis</h3>
+                <p>
+                    Dota 2 to wieloosobowa gra komputerowa na arenie bitewnej online opracowana przez Valve Corporation. Gra jest kontynuacja DotA, niestandardowej modyfikacji mapy do Warcraft III: Reign of Chaos i jej dodatku do Warcraft III: The Frozen Throne. Gra przedstawia bitwe na specjalnej mapie; w kazdym meczu biora udzial dwie piecioosobowe druzyny, które kontroluja „bohaterow” – postaci o roznych zestawach umiejetnosci. Aby wygrac mecz, druzyna musi zniszczyc specjalny obiekt „fortecy” nalezacy do strony wroga i chronic swoja „fortece” przed zniszczeniem.
+                </p>
+            </div>
+            <div class = "about-col">
+                <h3>proces gry</h3>
+                <p>
+                    Kazdy mecz odbywa sie na specjalnej, kwadratowej mapie, na ktorej twierdze obu druzyn znajduja sie w przeciwleglych rogach, a gracze sa rozproszeni po sciezkach laczacych te fortece – „liniach” (ang. Lane). Oprocz samych graczy w grze akceptowane sa stwory sterowane komputerowo - "creeps" (eng. Creeps) oraz konstrukcje stale - "wieze" (eng. Towers), wlasne z kazdej strony; biora równiez udzial w bitwie, atakujac wrogich bohaterow, creepow i wrogie wieze, pomagajac w ten sposob „swojej” druzynie. Mgla wojny, ktora pokrywa wiekszosc mapy, uniemozliwia graczom sledzenie ruchow wroga.
+                </p>
+            </div>
+            <div class = "about-col">
+                <h3>Nagrody</h3>
+                <p>
+                    PC Gamer zrecenzowal Dota 2 we wrzesniu 2012 roku, zauwazajac, ze byla to „niezwykle gleboka i zlozona gra, ktora jest swietna kontynuacja oryginalnej DotA” i dala grze 85/100. W grudniu 2012 roku PC Gamer nominowal Dote 2 jako pretendenta do najlepszej gry 2012 roku, a takze najlepszej gry e-sportowej roku. Po pierwszej publicznej demonstracji gry na The International 2011 otrzymala nagrode People's Choice Award od IGN
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--TOURNAMENTS-->
+
+    <section class = "tournaments" id = "tournaments">
+        <div class = "tourFrame">
+            <h3>harmonogram turniejow</h3>
+        </div>
+        <iframe src="https://www.gosugamers.net/dota2/tournaments" style="border: 5px solid darkred;" width="1400" height="900"></iframe>
+    </section>
+
+
+    <!--FEEDBACK-->
+
+    <section class="feedback" id="feedback">
+        <div class = "feedbackHeader">
+            <h3>co ludzie mowia o dota</h3>
+        </div>
+
+        <div class = "back-col">
+            <img src = "Images/Review1.png">
+            <div>
+                <h3>Recenzja od uzytkownika o pseudonimie: "VadokGurz"</h3>
+            </div>
+        </div>
+        <div class = "back-col">
+            <img src = "Images/Review2.png">
+            <div>
+                <h3>Recenzja od uzytkownika o pseudonimie: "Jinx"</h3>
+            </div>
+        </div>
+        <div class = "back-col">
+            <img src = "Images/Review3.png">
+            <div>
+                <h3>Recenzja od uzytkownika o pseudonimie: "Tegi Jez"</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <section class = "footer">
+        <h3>strona internetowa wykonana przez Danylo Koval</h3>
+        <p>Nr. 132522</p>
+    </section>
+
+    <!-----JS close menu/open menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
