@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='kontakt.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="wrapper">
+            <a href="index.html"><img src="Art/Logo.png" alt="logo"></a>
+            <div class="buttonWrapper">
+                <a href="szkol.html" target="_top">SZKOLENIA BHP</a>
+                <a href="online.html" target="_top">SZKOLENIE BHP ONLINE</a>
+                <a href="kontakt.html" target="_top">KONTAKT</a>
+            </div>
+        </div>
+    </section>
+    <section class="formular">
+        <h1>Formularz kontaktowy</h1>
+        <input type="text" placeholder="Imię i Nazwisko*" class="initialBox">
+        <input type="text" placeholder="Adres email*" class="emailBox">
+        <!-- <input type="text" placeholder="Treść wiadomości" class="textBox"> -->
+        <textarea id="freeform" name="freeform" rows="4" cols="50" placeholder="Treść wiadomości" class="textBox"></textarea>
+        <button type="button" onclick="alert('Wiadomośc wysłana')" class="sendButton">WYŚLIJ</button>
+    </section>
+
+    <section class="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.54401723206!2d19.109363715744863!3d50.821086479528255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5d56dfb56a3%3A0x454b1a87aef92039!2sGenera%C5%82a%20Jana%20Henryka%20D%C4%85browskiego%2069%2C%2042-218%20Cz%C4%99stochowa!5e0!3m2!1sru!2spl!4v1673903051006!5m2!1sru!2spl"
+            width="600" height="450" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="wrapperAddr">
+            <div class="ggg">Siedziba firmy QuantumBHP w Częstochowie</div>
+            <div class="lll">Generała Jana Henryka Dąbrowskiego 69</div>
+            <div class="kkk">42-201 Częstochowa</div>
+        </div>
+    </section>
+
+    <section class="Footer">
+        <div class="wrapperFoot">
+            <img src="Art/Logo.png" alt="logo">
+            <div class="infoWrapper">
+                <div class="firstColumn">
+                    <p>Vladyslav Tretyak</p>
+                    <p><i class="fa fa-phone"></i> 555 666 777</p>
+                    <p>Barys Khrapavitski</p>
+                    <p><i class="fa fa-phone"></i> 123 456 789</p>
+                </div>
+                <div class="secondColumn">
+                    <p>Siedziba firmy QuantumBHP w Częstochowie</p>
+                    <p>Generała Jana Henryka Dąbrowskiego 69</p>
+                    <p>42-201 Częstochowa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

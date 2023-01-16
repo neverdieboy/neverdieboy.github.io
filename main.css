@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.logo>.wrapper {
+    left: 10%;
+    right: 10%;
+}
+
+.wrapper>a>img {
+    margin-left: 10%;
+    margin-top: -28px;
+    height: 150px;
+    width: 150px;
+}
+
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    float: right;
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+.buttonWrapper>a {
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+    color: black;
+}
+
+.divide1 {
+    height: 700px;
+    background: linear-gradient(to top, #7a490085, #995c0085), url("Art/people-1979261_960_720.jpg");
+    background-size: cover;
+}
+
+.centered {
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paragraf1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraf1>.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.column1>p {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.column2>p {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.column1 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 100px;
+}
+
+.column2 {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+li {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.divide2 {
+    height: 300px;
+    background: linear-gradient(to top, #7a490085, #995c0085), url("Art/photo_2023-01-16_20-59-52.jpg");
+    background-size: cover;
+}
+
+.centered2 {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.paragraf2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.paragraf2>h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.paragraf2>p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.formular {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.initialBox {
+    margin-top: 2%;
+    width: 100%;
+    height: 40px;
+    border: 10px, solid;
+}
+
+.emailBox {
+    margin-top: 2%;
+    width: 100%;
+    height: 40px;
+    border: 10px, solid;
+}
+
+.textBox {
+    margin-top: 2%;
+    width: 100%;
+    height: 200px;
+    border: 10px, solid;
+    resize: none;
+}
+
+.sendButton {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.sendButton:hover,
+.sendButton:focus {
+    opacity: .75;
+}
+
+.Footer {
+    margin-top: -5%;
+    width: 100%;
+    height: 150px;
+    background-color: #7a4900;
+}
+
+.wrapperFoot {
+    left: 10%;
+    right: 10%;
+}
+
+.wrapperFoot>img {
+    margin-left: 30%;
+    margin-top: -5px;
+    height: 150px;
+    width: 150px;
+}
+
+.infoWrapper {
+    float: right;
+    margin-right: 25%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+}
+
+.firstColumn {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.secondColumn {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    font-size: 18px;
+}

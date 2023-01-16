@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.logo>.wrapper {
+    left: 10%;
+    right: 10%;
+}
+
+.wrapper>a>img {
+    margin-left: 10%;
+    margin-top: -28px;
+    height: 150px;
+    width: 150px;
+}
+
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    float: right;
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+.buttonWrapper>a {
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+    color: black;
+}
+
+.paragraf {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.paragraf>p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.Footer {
+    margin-top: -5%;
+    width: 100%;
+    height: 150px;
+    background-color: #7a4900;
+}
+
+.wrapperFoot {
+    left: 10%;
+    right: 10%;
+}
+
+.wrapperFoot>img {
+    margin-left: 30%;
+    margin-top: -5px;
+    height: 150px;
+    width: 150px;
+}
+
+.infoWrapper {
+    float: right;
+    margin-right: 25%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+}
+
+.firstColumn {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.secondColumn {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    font-size: 18px;
+}
